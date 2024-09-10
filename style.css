@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+            /* BODY */
+body{
+    border: 1px, black, solid;
+    background-color: #FEEFEF;
+    height: 100%; 
+}
+
+.fundo{
+    background-color: rgb(255, 255, 255);
+    margin: 1.5em;  
+    /* width: 95%;
+    height: 96%; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+            /* HEADER */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:top ;
+    /* margin-left: 1em; */
+    
+}
+nav{
+    font-family:Questrial;
+    padding: 1em;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav li{
+    margin: 0 0 0 1.5em;
+    /* padding: 1em; */
+}
+h1{
+    font-family: 'Qwitcher Grypen', sans-serif;
+    font-size: 4em;
+    /* padding: 0.5em; */
+}
+
+            /* MAIN */
+
+main{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;   
+    justify-content: space-between;  
+    align-items:end;
+}
+#esquerdaIndex{
+    /* background-color: rgb(216, 204, 173); */
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em ;
+    margin-left: 1em;
+
+}
+#h2Index{
+    background-color:rgba(236, 236, 236, 0.6);
+    white-space: nowrap;
+    text-align: center;
+}
+main h3{
+    white-space: nowrap;
+    background-color:rgba(236, 236, 236, 0.6);
+    text-align: center
+}
+
+#imagensIndex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.imagens-soltas img {
+    width: 46%; /* Cada imagem ocupará 50% da largura */
+    padding: 2%;
+    aspect-ratio: 1 / 0.6;
+}
+
+#imagemDivulgacao{
+    width: 45%;
+    height: auto;
+    padding: 1em;
+    padding-top: 0;
+}
