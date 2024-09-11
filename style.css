@@ -17,27 +17,31 @@ body{
     height: 96%; */
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     flex-direction: column;
     padding: 0.5em;
 }
 
             /* HEADER */
 header{
+    width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items:top ;
-    /* margin-left: 1em; */
+    justify-content: space-between; 
+    align-content: center;
+
+    /* align-items:flex-start; */
     
 }
 nav{
+    width: 46%;
     font-family:Questrial;
     padding: 1em;
 }
 nav ul{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 nav li{
     margin: 0 0 0 1.5em;
@@ -46,13 +50,16 @@ nav li{
 h1{
     font-family: 'Qwitcher Grypen', sans-serif;
     font-size: 4em;
+    width: 50%;
+    white-space: nowrap;
     /* padding: 0.5em; */
 }
 
-            /* MAIN */
+            /* INDEX */
 
-main{
+#mainIndex{
     /* background-color: aquamarine; */
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;   
@@ -81,6 +88,7 @@ main h3{
 }
 
 #imagensIndex{
+    min-width: 100%;
     display: flex;
     flex-wrap: wrap;
 
@@ -97,4 +105,208 @@ main h3{
     height: auto;
     padding: 1em;
     padding-top: 0;
+}
+
+
+
+        /* SOBRE*/
+
+#mainSobre{
+      /* background-color: aquamarine; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    justify-content: space-between;  
+    align-items:end;
+    }
+
+#boxCimaSobre{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;   
+    justify-content: space-between;  
+    align-items:end;
+
+}
+
+#boxSobre{
+    background-color:rgba(236, 236, 236, 0.6);
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    justify-content: space-between;  
+    align-items:end;
+}
+#imagensSobre{
+    background-color:rgba(222, 20, 20, 0.6);
+    width: 45%;
+    height: auto;
+    padding: 1em;
+    padding-top: 0;
+
+}
+#boxBaixoSobre{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    justify-content: center;  
+    align-items:center;
+
+}
+
+#boxUltimosTrabalhos{
+    height: 400px;
+    background-color:rgba(236, 236, 236, 0.6);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#imagensUltimosTrabalhos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+}
+#imagensUltimosTrabalhos img{
+    /* height: 100%; */
+    padding: 0;
+    aspect-ratio: 1 / 1;
+}
+#inicioSobre{
+/* alinhar "botao" a esquerda */
+}
+
+
+        /* TRABALHOS */
+
+#mainTrabalhos{
+   background-color: aquamarine;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+
+}
+#boxTrabalhos{
+    /* caixa cinza */
+
+}
+#mainTrabalhos h2{
+margin: 1em;
+}
+#imagensTrabalhos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+#imagensTrabalhos img {
+    background-color: blueviolet;
+    width: 27%;
+    margin: 0.5em;
+    aspect-ratio: 1 / 1;
+}
+
+#inicioTrabalhos{
+    margin: 1em;
+}
+
+
+        /* PROCESSOS */
+
+#mainProcessos{
+          background-color: aquamarine;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;   
+          justify-content: space-between;  
+          align-items:center;
+}
+#processosXilogravura{
+    background-color: #FEEFEF;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#boxXilogravura{
+    width: 40%;
+
+}
+#imagensXilogravura{
+    background-color: rgb(228, 203, 171);
+    width: 40%;
+}
+#imagensXilogravura img{
+    background-color: blueviolet;
+    width: 90%;
+    margin-left: 1em;
+    aspect-ratio: 1.5/1;  
+
+}
+
+#processosLinogravura{
+    background-color: #FEEFEF;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#boxLinogravura{
+    width: 40%;
+
+}
+#imagensLinogravura{
+    background-color: rgb(228, 203, 171);
+    width: 40%;
+}
+#imagensLinogravura img{
+    background-color: blueviolet;
+    width: 90%;
+    margin-left: 1em;
+    aspect-ratio: 1.5/1;  
+
+}
+
+#processosMonotipia{
+    padding: 0.5em;
+    background-color: #505050;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#boxMonotipia{
+    margin: 1em;
+    width: 50%;
+
+}
+#imagensMonotipia{
+    background-color: rgb(228, 203, 171);
+    width: 40%;
+}
+#imagensMonotipia img{
+    background-color: blueviolet;
+    width: 90%;
+    margin-left: 1em;
+    aspect-ratio: 1.5/1;  
+
 }
