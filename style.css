@@ -5,9 +5,9 @@
 }
             /* BODY */
 body{
-    border: 1px, black, solid;
-    background-color: #FEEFEF;
+    background-color: #fedede;
     height: 100%; 
+    min-width: 360px;
 }
 
 .fundo{
@@ -28,7 +28,7 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: center; 
     align-content: center;
 
     /* align-items:flex-start; */
@@ -42,9 +42,11 @@ nav{
 nav ul{
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
+
 }
 nav li{
-    margin: 0 0 0 1.5em;
+    /* margin: 0 0 0 1.5em; */
     /* padding: 1em; */
 }
 h1{
@@ -55,6 +57,15 @@ h1{
     /* padding: 0.5em; */
 }
 
+h2, h3{
+    font-family: 'Cormorant Garamond';
+    color: rgb(26, 33, 14);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(26, 33, 14);
+}
             /* INDEX */
 
 #mainIndex{
@@ -63,12 +74,12 @@ h1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;   
-    justify-content: space-between;  
+    justify-content: center;  
     align-items:end;
 }
 #esquerdaIndex{
     /* background-color: rgb(216, 204, 173); */
-    width: 50%;
+    width: 48%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -77,13 +88,18 @@ h1{
 
 }
 #h2Index{
-    background-color:rgba(236, 236, 236, 0.6);
+    background-color:rgba(210, 210, 210, 0.6);
     white-space: nowrap;
     text-align: center;
+    font-size: 1.8em;
+    position: absolute;
+    margin-block-start: -3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
-main h3{
+#mainIndex h3{
     white-space: nowrap;
-    background-color:rgba(236, 236, 236, 0.6);
+    background-color:rgba(210, 210, 210, 0.6);
     text-align: center
 }
 
@@ -111,6 +127,7 @@ main h3{
 
         /* SOBRE*/
 
+
 #mainSobre{
       /* background-color: aquamarine; */
     width: 100%;
@@ -122,31 +139,37 @@ main h3{
     }
 
 #boxCimaSobre{
+    margin-bottom:4em ;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;   
     justify-content: space-between;  
-    align-items:end;
+    align-items:center;
 
 }
 
 #boxSobre{
-    background-color:rgba(236, 236, 236, 0.6);
-    width: 50%;
+    padding: 0.5em;
+    background-color:rgba(210, 210, 210, 0.6);
+    width: 40%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;   
     justify-content: space-between;  
-    align-items:end;
+    /* align-items:center; */
+    aspect-ratio: 1/1;
 }
 #imagensSobre{
     background-color:rgba(222, 20, 20, 0.6);
-    width: 45%;
-    height: auto;
-    padding: 1em;
-    padding-top: 0;
+    width: 55%;
 
+
+}
+#imagensSobre img{
+    width: 100%;
+    background-color: blueviolet;
+    aspect-ratio: 1 / 1.4;
 }
 #boxBaixoSobre{
     width: 100%;
@@ -159,8 +182,10 @@ main h3{
 }
 
 #boxUltimosTrabalhos{
-    height: 400px;
-    background-color:rgba(236, 236, 236, 0.6);
+    padding: 0.5em;
+    height: 500px;
+    width: 70%;
+    background-color:rgba(210, 210, 210, 0.6);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -177,9 +202,10 @@ main h3{
     position: absolute;
 }
 #imagensUltimosTrabalhos img{
-    /* height: 100%; */
-    padding: 0;
+    background-color: blueviolet;
+    margin: 0.3em;
     aspect-ratio: 1 / 1;
+
 }
 #inicioSobre{
 /* alinhar "botao" a esquerda */
@@ -189,11 +215,11 @@ main h3{
         /* TRABALHOS */
 
 #mainTrabalhos{
-   background-color: aquamarine;
+   /* background-color: aquamarine; */
    width: 100%;
    display: flex;
    flex-direction: column;
-   align-items: flex-end;
+   align-items: center;
 
 }
 #boxTrabalhos{
@@ -226,87 +252,58 @@ margin: 1em;
         /* PROCESSOS */
 
 #mainProcessos{
-          background-color: aquamarine;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;   
-          justify-content: space-between;  
-          align-items:center;
-}
-#processosXilogravura{
-    background-color: #FEEFEF;
+    /* background-color: aquamarine; */
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    justify-content: space-between;  
+    align-items:center;
+    align-content: center;
 }
-#boxXilogravura{
-    width: 40%;
-
-}
-#imagensXilogravura{
-    background-color: rgb(228, 203, 171);
-    width: 40%;
-}
-#imagensXilogravura img{
-    background-color: blueviolet;
-    width: 90%;
-    margin-left: 1em;
-    aspect-ratio: 1.5/1;  
-
-}
-
-#processosLinogravura{
-    background-color: #FEEFEF;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-#boxLinogravura{
-    width: 40%;
-
-}
-#imagensLinogravura{
-    background-color: rgb(228, 203, 171);
-    width: 40%;
-}
-#imagensLinogravura img{
-    background-color: blueviolet;
-    width: 90%;
-    margin-left: 1em;
-    aspect-ratio: 1.5/1;  
-
-}
-
-#processosMonotipia{
-    padding: 0.5em;
-    background-color: #505050;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-#boxMonotipia{
+#mainProcessos h2{
     margin: 1em;
+    font-size: xx-large;
+    font-family: 'Cormorant Garamond';
+}
+#mainProcessos h3{
+    margin-bottom: 0.5em;
+    font-size: xx-large;
+    font-family: 'Cormorant Garamond';
+}
+.processos{
+    background-color: rgba(210, 210, 210, 0.6);
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 3em;
+    margin-bottom: 1em; 
+}
+.box-processos{
     width: 50%;
-
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
 }
-#imagensMonotipia{
+.box-processos p{
+    width: 80%;
+    text-wrap: wrap;
+}
+.imagens-processos{
     background-color: rgb(228, 203, 171);
-    width: 40%;
+    width: 45%;
+    height: 100%;
 }
-#imagensMonotipia img{
+.imagens-processos img{
     background-color: blueviolet;
     width: 90%;
-    margin-left: 1em;
-    aspect-ratio: 1.5/1;  
-
+    margin: 1em;
+    aspect-ratio: 1/0.8;  
 }
