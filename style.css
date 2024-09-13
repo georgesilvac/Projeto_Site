@@ -54,6 +54,7 @@ h1{
     font-size: 4em;
     width: 50%;
     white-space: nowrap;
+    text-align: center;
     /* padding: 0.5em; */
 }
 
@@ -139,13 +140,26 @@ a{
     }
 
 #boxCimaSobre{
-    margin-bottom:4em ;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;   
-    justify-content: space-between;  
+    justify-content: center;  
     align-items:center;
+}
+#esquerdaSobre{
+    width: 48%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em ;
+    margin-left: 1em;
+}
+#imagemDivulgacaoSobre{
+    width: 45%;
+    height: auto;
+    padding: 1em;
+    padding-top: 0;
 
 }
 
@@ -307,3 +321,71 @@ margin: 1em;
     margin: 1em;
     aspect-ratio: 1/0.8;  
 }
+
+            /* CONTATO */
+
+#mainContato{
+    width: 720px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('imagens/2.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+}
+
+form{
+
+}
+#boxContato {
+    text-align: center; /* Centraliza o conteúdo da div */
+  }
+  
+  form {
+    display: inline-block; /* Permite centralizar o formulário dentro da div */
+    background-color: #f2f2f2; /* Adiciona um fundo para melhor visualização */
+    padding: 20px; /* Adiciona um espaço interno */
+    border-radius: 5px; /* Arredonda as bordas */
+  }
+  
+  label {
+    display: block; /* Faz com que cada label ocupe uma linha */
+    margin-bottom: 10px; /* Adiciona espaço entre a label e o input */
+  }
+  
+  input {
+    width: 300px; /* Define a largura dos inputs */
+    padding: 10px; /* Adiciona um espaço interno */
+    margin-bottom: 10px; /* Adiciona espaço entre os inputs */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    border-radius: 3px; /* Arredonda as bordas */
+  }
+  
+  /* Placeholder para o input */
+  input::-webkit-input-placeholder {
+    text-align: center;
+  }
+  
+  input:-moz-placeholder {
+    text-align: center;
+  }
+  
+  input::-moz-placeholder {
+    text-align: center;
+  }
+  
+  input:-ms-input-placeholder {
+    text-align: center;   
+  }
+  #mensagem {
+    height: 100px; /* Ajuste este valor conforme necessário */
+  }
+  
+  footer{
+    background-color: rosybrown;
+    text-align: center;
+  }
