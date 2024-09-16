@@ -28,14 +28,14 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center; 
-    align-content: center;
+    justify-content: center;
+    /* align-content: center;  */
 
-    /* align-items:flex-start; */
+    align-items:flex-start;
     
 }
 nav{
-    width: 46%;
+    width: 55%;
     font-family:Questrial;
     padding: 1em;
 }
@@ -46,16 +46,15 @@ nav ul{
 
 }
 nav li{
-    /* margin: 0 0 0 1.5em; */
-    /* padding: 1em; */
+font-size: 30px;
 }
 h1{
     font-family: 'Qwitcher Grypen', sans-serif;
-    font-size: 4em;
-    width: 50%;
+    font-size: 120px;
+    width: 40%;
     white-space: nowrap;
-    text-align: center;
-    /* padding: 0.5em; */
+    text-align: left;
+    font-weight: normal;
 }
 
 h2, h3{
@@ -80,7 +79,7 @@ a{
 }
 #esquerdaIndex{
     /* background-color: rgb(216, 204, 173); */
-    width: 48%;
+    width: 40%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -90,18 +89,26 @@ a{
 }
 #h2Index{
     background-color:rgba(210, 210, 210, 0.6);
-    white-space: nowrap;
-    text-align: center;
-    font-size: 1.8em;
     position: absolute;
-    margin-block-start: -3em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    /* margin-block-start: -3em; */
+    width: 1060px;
+    height: 150px;
+    top: 34%;
+    align-content: center;
+}
+#h2Index h2{
+    font-size: 75px;
+    white-space: nowrap;
+    text-align: left;
+
+
 }
 #mainIndex h3{
     white-space: nowrap;
-    background-color:rgba(210, 210, 210, 0.6);
-    text-align: center
+    /* background-color:rgba(210, 210, 210, 0.6); */
+    text-align: center;
+    margin-bottom: 6em;
+    font-size: 30px;
 }
 
 #imagensIndex{
@@ -118,7 +125,7 @@ a{
 }
 
 #imagemDivulgacao{
-    width: 45%;
+    width: 55%;
     height: auto;
     padding: 1em;
     padding-top: 0;
@@ -265,6 +272,7 @@ margin: 1em;
 
         /* PROCESSOS */
 
+
 #mainProcessos{
     /* background-color: aquamarine; */
     width: 100%;
@@ -317,15 +325,17 @@ margin: 1em;
 }
 .imagens-processos img{
     background-color: blueviolet;
-    width: 90%;
+    width: 70%;
     margin: 1em;
     aspect-ratio: 1/0.8;  
 }
 
+
+
             /* CONTATO */
 
 #mainContato{
-    width: 720px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -338,31 +348,29 @@ margin: 1em;
     background-repeat: no-repeat; /* Impede que a imagem se repita */
 }
 
-form{
-
-}
 #boxContato {
     text-align: center; /* Centraliza o conteúdo da div */
+    width: 100%;
   }
   
   form {
     display: inline-block; /* Permite centralizar o formulário dentro da div */
-    background-color: #f2f2f2; /* Adiciona um fundo para melhor visualização */
-    padding: 20px; /* Adiciona um espaço interno */
-    border-radius: 5px; /* Arredonda as bordas */
+    background-color: #f2f2f2; 
+    padding: 1em;
+    margin-bottom: 1em;
+
   }
   
   label {
-    display: block; /* Faz com que cada label ocupe uma linha */
-    margin-bottom: 10px; /* Adiciona espaço entre a label e o input */
+    display: block;
+    margin-bottom: 1em;
   }
   
   input {
-    width: 300px; /* Define a largura dos inputs */
-    padding: 10px; /* Adiciona um espaço interno */
-    margin-bottom: 10px; /* Adiciona espaço entre os inputs */
-    border: 1px solid #ccc; /* Adiciona uma borda */
-    border-radius: 3px; /* Arredonda as bordas */
+    width: 60%;
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
   }
   
   /* Placeholder para o input */
