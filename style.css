@@ -6,8 +6,8 @@
             /* BODY */
 body{
     background-color: #fedede;
-    height: 100%; 
-    min-width: 360px;
+    /* height: 1340px; */
+    width: 100VW; 
 }
 
 .fundo{
@@ -20,6 +20,8 @@ body{
     align-items: center;
     flex-direction: column;
     padding: 0.5em;
+    min-width: 1045px;
+
 }
 
             /* HEADER */
@@ -27,31 +29,32 @@ header{
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* align-content: center;  */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding-left: 3em;
 
-    align-items:flex-start;
     
 }
 nav{
-    width: 55%;
     font-family:Questrial;
     padding: 1em;
+    width: 1080px;
 }
 nav ul{
+    padding-right: 3em;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 
 }
 nav li{
-font-size: 30px;
+    margin: 1em 0 0 0.5em;
+    font-size: 30px;
 }
 h1{
     font-family: 'Qwitcher Grypen', sans-serif;
     font-size: 120px;
-    width: 40%;
+    width: max-content;
     white-space: nowrap;
     text-align: left;
     font-weight: normal;
@@ -73,14 +76,14 @@ a{
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;   
+    /* flex-wrap: wrap-reverse;    */
     justify-content: center;  
     align-items:end;
 }
 #esquerdaIndex{
     /* background-color: rgb(216, 204, 173); */
     width: 40%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1em ;
@@ -90,38 +93,40 @@ a{
 #h2Index{
     background-color:rgba(210, 210, 210, 0.6);
     position: absolute;
-    /* margin-block-start: -3em; */
-    width: 1060px;
-    height: 150px;
-    top: 34%;
-    align-content: center;
+    width: 1010px;
+    /* height: 110px; */
+    top: 320px;
 }
 #h2Index h2{
     font-size: 75px;
     white-space: nowrap;
-    text-align: left;
+    text-align: center;
+
+
+}
+#espacovazioIndex{
+    width: 18%;
 
 
 }
 #mainIndex h3{
-    white-space: nowrap;
+    white-space: wrap;
     /* background-color:rgba(210, 210, 210, 0.6); */
     text-align: center;
-    margin-bottom: 6em;
-    font-size: 30px;
+    margin-bottom: 0;
+    font-size: 24px;
 }
 
 #imagensIndex{
-    min-width: 100%;
     display: flex;
     flex-wrap: wrap;
 
 }
 
 .imagens-soltas img {
-    width: 46%; /* Cada imagem ocupará 50% da largura */
+    width: 46%; /* Cada imagem ocupará 46% da largura */
     padding: 2%;
-    aspect-ratio: 1 / 0.6;
+    aspect-ratio: 1 / 1;
 }
 
 #imagemDivulgacao{
