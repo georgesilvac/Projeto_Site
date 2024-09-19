@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <div class="fundo">
-        <header>
+    <div class="fundo" id="fundoContato">
+        <header id="headerContato">
             <h1><a href="index.html">George Silva</a></h1>
             <nav class="menu-principal">
                 <ul>
@@ -31,21 +31,19 @@
 
             <div class="boxCinza" id="boxContato">
              
-                <h2>CONTATO</h2>
                 <form>
-                    <label for="nome-sobrenome">Como devo lhe chamar:</label><br>
-                    <input type="text" id="nome-sobrenome" name="nome-sobrenome"><br>
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="email">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone"><br>
+                    <h2>CONTATO</h2>
+                    <input type="text" id="nome-sobrenome" name="nome-sobrenome" placeholder="Nome"><br>
+                    
+                    <input type="email" id="email" name="email" placeholder="E-mail">
+                    <!-- <label for="telefone">Telefone</label> -->
+                    <input type="tel" id="telefone" name="telefone" placeholder="Telefone com DDD"><br>
                     <!-- assunto pode ser um iten selecionavel entre "aquisição", "encomendas" "exposições", "outros" -->
-                    <label for="assunto">Assunto</label>
-                    <input type="text" id="assunto" name="assunto"><br>
-                    <label for="mensagem">Mensagem</label>
-                    <input type="text" id="mensagem" name="mensagem"><br>
-                    <label for="enviar"></label>
-                    <input type="submit" id="enviar" name="enviar">
+                    <!-- <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="assunto"><br> -->
+                    <!-- <label for="mensagem">Mensagem</label> -->
+                    <input type="text" id="mensagem" name="mensagem" placeholder="Digite aqui sua mensagem"><br>
+                    <input type="submit" id="enviar" name="enviar" value="ENVIAR>>">
 
                 </form>    
             </div>
@@ -57,7 +55,9 @@
         <footer>
             <a href="https://www.instagram.com/ninhodecobra__/">INSTAGRAM |</a>
             <a href="https://www.instagram.com/ninhodecobra__/"> CURRICULO CULTURAL</a>
-            <p>Todos os direitos reservados</p><br>
+            <p>© 2024 Ninho de Cobra - Todos os direitos reservados. 
+                As imagens utilizadas neste site são de propriedade de seus respectivos autores, <br>foram utilizadas sob licença e não estão no domínio público. 
+                Qualquer uso não autorizado das imagens deste site é proibido.</p> <br>
             <p>Desenvolido por George Silva</p>
         </footer>
     </div>

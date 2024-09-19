@@ -8,9 +8,20 @@ body{
     background-color: #fedede;
     /* height: 1340px; */
     width: 100VW; 
+    position: relative;
+    
 }
 
+.box-marrom{
+    width: 100vw;
+    height: 200px;
+    min-width: 1045px;
+    background-color: #7C4425;
+    position: absolute;
+    top: -25px;
+}
 .fundo{
+    position: relative;
     background-color: rgb(255, 255, 255);
     margin: 1.5em;  
     /* width: 95%;
@@ -32,6 +43,7 @@ header{
     /* flex-wrap: wrap; */
     justify-content: space-between;
     padding-left: 3em;
+    padding-right: 1em;
 
     
 }
@@ -69,6 +81,9 @@ a{
     text-decoration: none;
     color: rgb(26, 33, 14);
 }
+p{
+    font-family:Questrial;
+}
             /* INDEX */
 
 #mainIndex{
@@ -76,7 +91,6 @@ a{
     width: 100%;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap-reverse;    */
     justify-content: center;  
     align-items:end;
 }
@@ -114,7 +128,8 @@ a{
     /* background-color:rgba(210, 210, 210, 0.6); */
     text-align: center;
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 30px;
+    padding-left: 0.5em;
 }
 
 #imagensIndex{
@@ -123,9 +138,17 @@ a{
 
 }
 
+#verMaisIndex{
+    padding-left: 1em;
+    font-size: 22px;
+    color: #931c02;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .imagens-soltas img {
     width: 46%; /* Cada imagem ocupará 46% da largura */
-    padding: 2%;
+    padding: 5px;
     aspect-ratio: 1 / 1;
 }
 
@@ -149,31 +172,68 @@ a{
     flex-wrap: wrap;   
     justify-content: space-between;  
     align-items:end;
+    position: relative;
     }
 
 #boxCimaSobre{
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;   
-    justify-content: center;  
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
 }
 #esquerdaSobre{
-    width: 48%;
-    height: auto;
+    background-color: rgba(210, 210, 210, 0.6);
+    width: 30%;
+    height: 600px;
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1em ;
-    margin-left: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3em;
+    margin-left: 3em;
+    margin-right: 5em;
 }
+#h2-pSobre{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#esquerdaSobre h2{
+    font-size: 70px;
+
+}
+#esquerdaSobre p{
+    font-size: 22px;
+    margin-top: 1em;
+}
+#lerMaisSobre{
+    font-size: 22px;
+    color: #931c02;
+    font-weight: bold; 
+    font-style: italic;
+}
+
 #imagemDivulgacaoSobre{
-    width: 45%;
+    /* width: 55%; */
+    padding: 1em;
+    padding-top: 0;
+    margin-right: 1.5em;
+    position: relative;
+
+}
+#imagemDivulgacaoSobre img{
     height: auto;
     padding: 1em;
     padding-top: 0;
+}
+
+#detalheSobre{
+    position: absolute;
+    top: -35px;
+    left: -70px;
 
 }
+
 
 #boxSobre{
     padding: 0.5em;
@@ -183,13 +243,11 @@ a{
     flex-direction: column;
     flex-wrap: wrap;   
     justify-content: space-between;  
-    /* align-items:center; */
     aspect-ratio: 1/1;
 }
 #imagensSobre{
     background-color:rgba(222, 20, 20, 0.6);
     width: 55%;
-
 
 }
 #imagensSobre img{
@@ -197,19 +255,16 @@ a{
     background-color: blueviolet;
     aspect-ratio: 1 / 1.4;
 }
+
 #boxBaixoSobre{
+    margin-top: 2em;
+    margin-bottom: 5em;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;   
-    justify-content: center;  
-    align-items:center;
-
+    overflow: hidden;
 }
-
 #boxUltimosTrabalhos{
     padding: 0.5em;
-    height: 500px;
+    height: 900px;
     width: 70%;
     background-color:rgba(210, 210, 210, 0.6);
     text-align: center;
@@ -217,26 +272,66 @@ a{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+#boxUltimosTrabalhos h2{
+    font-size: 60px;
+}
 
+#boxImagensUltimosTrabalhos{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    justify-content: center;  
+    align-items:center;
+}
+
+.imagens-ultimos-trabalhos{
+    width: 33%;
+    border-color: violet;
+    border-style: dashed;
+    aspect-ratio: 1 / 1;
+    max-width: 635px;
+    min-width: 335px;
 }
 
 #imagensUltimosTrabalhos{
     display: flex;
-    justify-content: space-between;
     width: 100%;
     padding: 2%;
     position: absolute;
+    top: 150px;
+    /* para responsividade */
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; */
+
+
 }
 #imagensUltimosTrabalhos img{
     background-color: blueviolet;
     margin: 0.3em;
-    aspect-ratio: 1 / 1;
 
+}
+
+#vertodosSobre{
+    font-size: 22px;
+    color: #931c02; 
+    font-weight: bold;
+    font-style: italic;
+    
 }
 #inicioSobre{
-/* alinhar "botao" a esquerda */
+    position: absolute;
+    bottom: 1em;
+    left: 1.5em;
+    margin-top: 2em;
+    font-size: 18px;
+    color: #931c02; 
+    font-weight: bold;
+    font-style: italic;
 }
-
 
         /* TRABALHOS */
 
@@ -254,6 +349,7 @@ a{
 }
 #mainTrabalhos h2{
 margin: 1em;
+font-size: 70px;
 }
 #imagensTrabalhos{
     display: flex;
@@ -264,7 +360,7 @@ margin: 1em;
 
 }
 #imagensTrabalhos img {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 27%;
     margin: 0.5em;
     aspect-ratio: 1 / 1;
@@ -272,6 +368,11 @@ margin: 1em;
 
 #inicioTrabalhos{
     margin: 1em;
+    margin-top: 2em;
+    font-size: 18px;
+    color: #931c02; 
+    font-weight: bold;
+    font-style: italic;
 }
 
 
@@ -290,12 +391,12 @@ margin: 1em;
 }
 #mainProcessos h2{
     margin: 1em;
-    font-size: xx-large;
+    font-size: 70px;
     font-family: 'Cormorant Garamond';
 }
 #mainProcessos h3{
     margin-bottom: 0.5em;
-    font-size: xx-large;
+    font-size: 40px;
     font-family: 'Cormorant Garamond';
 }
 .processos{
@@ -334,71 +435,110 @@ margin: 1em;
     margin: 1em;
     aspect-ratio: 1/0.8;  
 }
+.processos p{
+    font-size: 22px;
+    margin-top: 1em;
 
+}
 
 
             /* CONTATO */
 
+
+#fundoContato{
+    background-image: url('imagens/2.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    margin-bottom: 0;
+}
+#headerContato a, h1{
+    color: rgba(210, 210, 210, 0.8);
+
+}
 #mainContato{
     width: 100%;
-    height: auto;
+    height: 1200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('imagens/2.jpg');
-    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    
 }
 
 #boxContato {
     text-align: center; /* Centraliza o conteúdo da div */
     width: 100%;
-  }
+}
   
   form {
+    width: 60%;
+    height: auto;
     display: inline-block; /* Permite centralizar o formulário dentro da div */
-    background-color: #f2f2f2; 
-    padding: 1em;
+    background-color: rgba(210, 210, 210, 0.8); 
+    padding: 2em;
     margin-bottom: 1em;
 
   }
-  
+  form h2{
+    font-size: 50px;
+    margin: 1em;
+  }
   label {
     display: block;
     margin-bottom: 1em;
   }
   
   input {
-    width: 60%;
+    margin: 1em;
+    width: 65%;  
     padding: 10px; 
     margin-bottom: 10px;
     border: 1px solid #ccc; 
+    background-color: #ededed
+
   }
   
   /* Placeholder para o input */
   input::-webkit-input-placeholder {
-    text-align: center;
+    font-family:Questrial;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+
   }
-  
-  input:-moz-placeholder {
-    text-align: center;
-  }
-  
-  input::-moz-placeholder {
-    text-align: center;
-  }
-  
-  input:-ms-input-placeholder {
-    text-align: center;   
+  #enviar{
+    font-family: 'Cormorant Garamond';
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    color: #931c02; 
+    width: auto;
+    margin-bottom: 2em;
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
   }
   #mensagem {
-    height: 100px; /* Ajuste este valor conforme necessário */
+    height: 150px;
   }
   
   footer{
-    background-color: rosybrown;
+    padding: 2em;
+    height: 200px;
+    background-color: #7C4425;
     text-align: center;
+  }
+  footer p{
+    color: rgba(210, 210, 210, 0.8);
+    font-size: 22px;
+    margin-top: 1em;
+  }
+
+  footer a{
+    color: rgba(210, 210, 210, 0.8);
+    font-size: 30px;
+    margin-top: 1em;
+    
   }
