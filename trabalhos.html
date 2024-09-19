@@ -14,7 +14,6 @@
 </head>
 
 <body>
-    <div class="box-marrom"></div>
     <div class="fundo" id ="fundoTrabalhos">
         <header>
             <h1><a href="index.html">George Silva</a></h1>
@@ -24,13 +23,13 @@
                     <li><a href="trabalhos.html">Trabalhos</a></li>
                     <li><a href="processos.html">Processos</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                    <li>En-</li>
+                    <li>English</li>
                 </ul>
             </nav>
         </header>
         <main id="mainTrabalhos">
             <h2>TRABALHOS</h2>
-            <section class="imagens-soltas" id="imagensTrabalhos">
+            <section class="imagens-soltas-trabalhos" id="imagensTrabalhos">
                 <img src="imagens/trabalhos/imagem1.png" alt="img1">
                 <img src="imagens/trabalhos/imagem2.png" alt="img2">
                 <img src="imagens/trabalhos/imagem3.png" alt="img3">
@@ -41,12 +40,30 @@
                 <img src="imagens/trabalhos/imagem8.png" alt="img8">
                 <img src="imagens/trabalhos/imagem9.png" alt="img9">
             </section>
+            <!-- modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <div id="layoutModalTrabalhos">   
+                    <img id="img01" src="">
+                    <div id="descricao-modal">
+                        <h2>Título da obra</h2>
+                        <p>Descrição detalhada do conceito, tecnica aplicada, materiais, tiragem, disponibilidade e etc.<br> <br>
+                        Nao consegui fazer com que o java pegasse o "src" da imagem ao clicar e usasse para aplica-la aqui nessa div ao lado <<<<- <br> ia usar o "alt" para puxar cada descrição individualmente neste campo </p>
+                        <a href="contato.html">ADIQUIRIR>></a>
+                    </div>
+                </div>
+                <!-- botoes esquerda direita simples -->
+                <!-- <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button> -->
+            </div>
+            
+            
             
             <div class ="boxCinza" id="boxTrabalhos"></div>
             <a class="botao-link" id="inicioTrabalhos" href="index.html">INÍCIO >></a>
-            </main>
+        </main>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
