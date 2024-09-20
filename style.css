@@ -125,7 +125,7 @@ p{
 
 }
 #verMaisIndex{
-    padding-left: 1em;
+    padding-top: 0.8em;
     font-size: 22px;
     color: #931c02;
     font-weight: bold;
@@ -176,7 +176,7 @@ p{
     align-items: flex-start;
     justify-content: space-between;
     padding: 3em;
-    margin-left: 3em;
+    margin-left: 2.5em;
     margin-right: 5em;
 }
 #h2-pSobre{
@@ -207,8 +207,7 @@ p{
 }
 #imagemDivulgacaoSobre img{
     height: auto;
-    padding: 1em;
-    padding-top: 0;
+    padding-bottom: 1em;
 }
 #detalheSobre{
     position: absolute;
@@ -239,7 +238,7 @@ p{
 #boxUltimosTrabalhos{
     padding: 0.5em;
     height: 900px;
-    width: 70%;
+    width: 65%;
     background-color:rgba(210, 210, 210, 0.6);
     text-align: center;
     display: flex;
@@ -268,7 +267,7 @@ p{
     margin-right: 10px;
 }
 .imagens-ultimos-trabalhos img{
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin: 0.5em;
 }
@@ -578,7 +577,7 @@ footer a{
     width: 350px;
     min-height: 450px;
     min-width: 450px;
-    height: 80%;
+    height: 60%;
     background: #ededed;
 
 }
