@@ -13,6 +13,7 @@ body{
     background: linear-gradient(180deg,rgba(124,68,37,1) 0%, rgba(124,68,37,1) 14%, rgba(254,222,222,1) 14%, rgba(254,222,222,1) 100%);
     width: 99vw; 
     background-repeat: repeat-x;
+    
 }
 .bodyContato{
     background: rgba(254,222,222,0.9);
