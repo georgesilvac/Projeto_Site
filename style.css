@@ -3,11 +3,15 @@
     padding: 0;
     list-style: none;
 }
+html{
+    width: 100vw;
+    min-width: 1300px;
+}
             /* BODY */
 body{
     background: rgb(124,68,37);
     background: linear-gradient(180deg,rgba(124,68,37,1) 0%, rgba(124,68,37,1) 14%, rgba(254,222,222,1) 14%, rgba(254,222,222,1) 100%);
-    width: 100vw; 
+    width: 99vw; 
     background-repeat: repeat-x;
 }
 .bodyContato{
@@ -382,6 +386,7 @@ p{
     justify-content: center;
     align-items: flex-start;
     align-content: center;
+    padding: 1.5em;
 }
 .box-processos p{
     width: 80%;
@@ -525,6 +530,8 @@ footer{
     height: 200px;
     background-color: #7C4425;
     text-align: center;
+    width: 100%;
+    min-width: max-content;
 }
 footer p{
     color: rgba(210, 210, 210, 0.8);
